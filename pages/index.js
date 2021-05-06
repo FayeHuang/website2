@@ -7,7 +7,7 @@ export default function Home() {
     fetch(url)
     .then(res => res.json())
     .catch(error => {
-      alert(`Error:\n${error}`)
+      alert(`Error:\n無法存取`)
     })
     .then(response => {
       alert(`Success:\n${JSON.stringify(response, null, 2)}`)
